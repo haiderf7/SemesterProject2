@@ -1,6 +1,6 @@
 // SEARCH MJS
 
-import { renderSearchList } from "../views/posts/list.mjs";
+import { renderSearchList } from "../views/list.mjs";
 import { searchListings } from "../api/posts/read.mjs";
 
 export function handleSearch() {

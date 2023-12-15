@@ -1,6 +1,6 @@
 // INDEX MJS
 
-import { renderList } from "./views/posts/list.mjs";
+import { renderList } from "./views/list.mjs";
 import { handleSearch } from "./handlers/search.mjs";
 
 // import { searchLists } from "./search.mjs";

@@ -115,18 +115,20 @@
                 <div class="form-error" id="userNameError">
                   Please enter your name
                 </div>
+                
+<div class="form-outline mb-4">
+  <label class="form-label" for="form3Example3cg">Your Email</label>
+  <input 
+    name="emailAddress" 
+    type="email" 
+    autocomplete="off" 
+    id="emailAddress" 
+    class="form-control form-control-lg" 
+    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+    title="Your email must match the pattern" />
+</div>
 
-                <div class="form-outline mb-4">
-                  <label class="form-label" for="form3Example3cg">Your Email</label>
-                  <input 
-                  name="emailAddress" 
-                  type="email" 
-                  autocomplete="off" 
-                  id="emailAddress" 
-                  class="form-control form-control-lg" 
-                  pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" 
-                  title="Your email must match the pattern" />
-                </div>
+
 
                 <div class="form-error" id="emailError">
                   Please enter your mail
