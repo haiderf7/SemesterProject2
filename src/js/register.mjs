@@ -46,14 +46,18 @@ async function registerTheUser(username, email, password) {
 
     try {
         const response = await fetch(url, options);
-        console.log(response);
         const json = await response.json();
-        console.log(json);
-        if (json.error) {
-            validateForm();
+
+        if (response.ok) {
+            // Registration successful
+            alert("Registration successful!");
+        } else {
+            // Registration failed
+            alert(`Registration failed: ${json.message}`);
         }
     } catch (error) {
         console.log(error);
+        alert("An error occurred during registration.");
     }
 }
 
