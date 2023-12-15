@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile page</title>
+    <meta name="description" content="KAS is an auction site for users who want to add items to be bid on and bid on items other users have put up for auction. Enjoy!"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/profile.css" />
+    <script type="module" src="src/js/profile.mjs"></script>
+    <script type="module" src="src/js/storage.mjs"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </head>
+  <header class="headerStyle">
+        <a href="index.html"
+          ><img src="images/logo-auction-site.png" class="logoStyle" alt="logo for auction site"
+        /></a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Haider`s Auction Site</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="btn btn-outline-success my-2 my-sm-0" href="index.html"
+                >Home <span class="sr-only"></span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-success my-2 my-sm-0" href="#">Auctions</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-success my-2 my-sm-0" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-success my-2 my-sm-0" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-success my-2 my-sm-0" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="btn btn-outline-success my-2 my-sm-0 dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <div>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="searchButton btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        <button class="logoutButton btn btn-outline-danger" id="logOut" type="submit">
+          Log Out
+        </button>
+      </nav>
+  </header>
+  <body>
+    <main>
+    <h1 class="h1Style">Profile page</h1>
+    <section style="background-color: #eee;">
+      <div class="container py-5">
+    
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body text-center">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
+                  class="rounded-circle img-fluid" style="width: 150px;">
+                <h5 class="my-3">Haider Fahim Hashem</h5>
+                <p class="text-muted mb-1">Front-End Developer</p>
+                <p class="text-muted mb-4">New York, New York, USA</p>
+                <div class="d-flex justify-content-center mb-2">
+                  <button type="button" class="btn btn-primary">Follow</button>
+                  <button type="button" class="btn btn-outline-primary ms-1">Message</button>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4 mb-lg-0">
+              <div class="card-body p-0">
+                <ul class="list-group list-group-flush rounded-3">
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                    <i class="fas fa-globe fa-lg text-warning"></i>
+                    <a href="https://mdbootstrap.com" class="mb-0">https://mdbootstrap.com</a>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                    <i class="fab fa-github fa-lg" style="color: #333333;"></i>
+                    <a href="https://github.com/kardokiyani/SemesterProject2" class="mb-1">https://github.com/kardokiyani/SemesterProject2</a>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                    <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
+                    <a href="https://twitter.com/MDBootstrap" class="mb-0">https://twitter.com/MDBootstrap</a>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                    <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
+                    <a href="https://www.instagram.com/explore/tags/mdbootstrap" class="mb-1">https://www.instagram.com/explore/tags/mdbootstrap</a>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                    <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                    <a href="https://www.facebook.com/mdbootstrap/" class="mb-0">https://www.facebook.com/mdbootstrap/</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="card mb-4">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Full Name</p>
+                  </div>
+                  <div class="col-sm-9">
+                    <p class="text-muted mb-0">Cristiano Ronaldo</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Email</p>
+                  </div>
+                  <div class="col-sm-9">
+                    <p class="text-muted mb-0">example@example.com</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Phone</p>
+                  </div>
+                  <div class="col-sm-9">
+                    <p class="text-muted mb-0">(047) 123-4567</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Mobile</p>
+                  </div>
+                  <div class="col-sm-9">
+                    <p class="text-muted mb-0">(047) 891-0123</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Address</p>
+                  </div>
+                  <div class="col-sm-9">
+                    <p class="text-muted mb-0">New York, New York, USA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card mb-4 mb-md-0">
+                  <div class="card-body">
+                    <p class="mb-4"><span class="text-primary font-italic me-1">assigment</span> Project Status
+                    </p>
+                    <p class="mb-1" style="font-size: .77rem;">Web Design</p>
+                    <div class="progress rounded" style="height: 5px;">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-4 mb-1" style="font-size: .77rem;">Website Markup</p>
+                    <div class="progress rounded" style="height: 5px;">
+                      <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-4 mb-1" style="font-size: .77rem;">One Page</p>
+                    <div class="progress rounded" style="height: 5px;">
+                      <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-4 mb-1" style="font-size: .77rem;">Mobile Template</p>
+                    <div class="progress rounded" style="height: 5px;">
+                      <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-4 mb-1" style="font-size: .77rem;">Backend API</p>
+                    <div class="progress rounded mb-2" style="height: 5px;">
+                      <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4 mb-md-0">
+                  <div class="card-body">
+                    <p class="mb-4"><span class="text-primary font-italic me-1">assigment</span> Project Status
+                    </p>
+                    <p class="mb-1" style="font-size: .77rem;">Web Design</p>
+                    <div class="progress rounded" style="height: 5px;">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-4 mb-1" style="font-size: .77rem;">Website Markup</p>
+                    <div class="progress rounded" style="height: 5px;">
+                      <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-4 mb-1" style="font-size: .77rem;">One Page</p>
+                    <div class="progress rounded" style="height: 5px;">
+                      <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-4 mb-1" style="font-size: .77rem;">Mobile Template</p>
+                    <div class="progress rounded" style="height: 5px;">
+                      <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-4 mb-1" style="font-size: .77rem;">Backend API</p>
+                    <div class="progress rounded mb-2" style="height: 5px;">
+                      <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="apiProfile"></div>
+    <div class="updateAvatarContainer">
+    <form id="avatarForm">
+      <div class="form-group mb-3">
+        <label for="" class="inputAvatarLabel">Avatar</label>
+        <input class="avatarStyle" placeholder="Update avatar...." type="text" name="avatar" id="avatarId" />
+        <button type="submit" class="btn btn-success">Update</button>
+      </div>
+    </div>
+    </form>
+    </main>
+    <footer>
+      <div class="footer-text">
+        &copy Kardo`s Auction Site 2022 | All rights reserved.
+      </div>
+      <div class="footer-text">Terms of Service | Privacy Policy</div>
+     </footer> 
+  </body>
+</html>
