@@ -1,0 +1,35 @@
+// PROFILE SCSS
+
+//Bootstrap variable overrides
+@import "variables";
+
+//Bootstrap Styles
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "style.scss";
+
+.mb-1 {
+    font-size: 13.5px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.updateAvatarContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.avatarStyle {
+    font-size: 25px;
+}
+
+.btn-success {
+    font-size: 25px;
+}
+
+.inputAvatarLabel {
+    font-size: 30px;
+}

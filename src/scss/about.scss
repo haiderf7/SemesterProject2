@@ -1,0 +1,35 @@
+// ABOUT SCSS
+
+//Bootstrap variable overrides
+@import "variables";
+
+//Bootstrap Styles
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "style.scss";
+
+.h3Style {
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.aboutParagraphStyle {
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.auctionAboutImageStyle {
+    width: 500px;
+    padding: 20px;
+}
+
+.auctionImages {
+    display: flex;
+    justify-content: center;
+}

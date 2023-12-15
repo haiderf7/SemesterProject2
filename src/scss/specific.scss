@@ -1,0 +1,14 @@
+// SPECIFIC SCSS
+
+//Bootstrap variable overrides
+@import "variables";
+
+//Bootstrap Styles
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "style.scss";
+
+.postStyle {
+    display: flex;
+    justify-content: center;
+}

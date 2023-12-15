@@ -1,0 +1,18 @@
+// REGISTER SCSS
+
+//Bootstrap variable overrides
+@import "variables";
+
+//Bootstrap Styles
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "style.scss";
+
+.form-error {
+    display: none;
+    color: $red;
+}
+
+.mb-4 {
+    margin-top: 20px;
+}
