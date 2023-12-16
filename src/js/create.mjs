@@ -35,58 +35,65 @@ const descriptionError = document.querySelector("#descriptionError");
 
 const method = "post";
 
-export async function createPost(title, deadlineDate, media, description) {
-    const updateUrl = API_BASE_URL_LIST + "auction/listings";
-    const accessToken = localStorage.getItem("accessToken");
+export async function createPost(e) {
+    e.preventDefault();
+    const updateUrl = API_BASE_URL_LIST + 'auction/listings';
+    const accessToken = localStorage.getItem('accessToken');
 
     try {
-        const response = await authFetch(updateUrl, {
-            method: method,
-            headers: {
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${accessToken}`,
-            },
-            body: JSON.stringify({
-                title: title,
-                endsAt: deadlineDate,
-                media: [media],
-                description: description,
-            }),
-        });
-        const data = await response.json();
+        if (validatePost());
+        {
+            const payload = JSON.stringify({
+                title: title.value,
+                endsAt: deadlineDate.value,
+                media: [media.value],
+                description: description.value,
+            });
+
+            const response = await authFetch(updateUrl, {
+                method: method,
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${accessToken}`,
+                },
+                body: payload,
+            });
+            const data = await response.json();
+            location.reload();
+        }
     } catch (error) {
-        console.error(error);
+        console.error(error, 'list----');
     }
 }
 
-function validatePost(e) {
-    e.preventDefault();
+
+function validatePost() {
     if (validateTitle(title.value)) {
-        titleError.style.display = "none";
+        titleError.style.display = 'none';
     } else {
-        titleError.style.display = "block";
+        titleError.style.display = 'block';
     }
+
     if (validateDeadlineDate(deadlineDate.value)) {
-        deadlineDateError.style.display = "none";
+        deadlineDateError.style.display = 'none';
     } else {
-        deadlineDateError.style.display = "block";
+        deadlineDateError.style.display = 'block';
     }
+
     if (validateMedia(media.value)) {
-        mediaError.style.display = "none";
+        mediaError.style.display = 'none';
     } else {
-        mediaError.style.display = "block";
+        mediaError.style.display = 'block';
     }
+
     if (validateDescription(description.value)) {
-        descriptionError.style.display = "none";
+        descriptionError.style.display = 'none';
     } else {
-        descriptionError.style.display = "block";
+        descriptionError.style.display = 'block';
     }
-    return createPost(
-        title.value,
-        deadlineDate.value,
-        media.value,
-        description.value
-    );
+
+    return true;
 }
 
-form.addEventListener("submit", validatePost);
+
+form.addEventListener('submit', createPost);
