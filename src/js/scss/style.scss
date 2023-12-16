@@ -1,0 +1,146 @@
+// STYLE SCSS
+
+//Bootstrap variable overrides
+@import "variables";
+
+//Bootstrap Styles
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    background-color: $grey;
+}
+
+.h1Style {
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    background-color: $white;
+    color: $white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: $white;
+}
+
+nav ul {
+    padding: 15px;
+}
+
+.navStyle {
+    background-color: $brown;
+    color: $white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: end;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.auctionImageStyle {
+    width: 700px;
+    padding: 20px;
+}
+
+.logoStyle {
+    max-width: 200px;
+}
+
+.headerStyle {
+    padding: 15px;
+    background-color: $white;
+}
+
+footer {
+    padding: 15px;
+    background-color: $white;
+    color: $black;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+}
+
+.socials-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 25px;
+    margin: 25px;
+}
+
+.footer-text {
+    margin: 10px;
+}
+
+.form-inline {
+    display: flex;
+    justify-content: end;
+}
+
+.searchButton {
+    margin: 5px;
+}
+
+.contentStyle {
+    display: flex;
+    justify-content: center;
+}
+
+.postsStyle {
+    display: flex;
+    justify-content: center;
+}
+
+.formStyle {
+    padding: 20px;
+}
+
+.img-fluid {
+    width: 100%;
+    object-fit: cover;
+    max-height: 220px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-success {
+    font-size: 25px;
+}
+
+.form-error {
+    display: none;
+    color: $red;
+}
+
+.nav-item {
+    gap: 10px;
+    padding: 3px;
+}
